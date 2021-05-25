@@ -66,5 +66,5 @@ def infojuego(idjuego):
         dic={"titulo":i.get("title"),"contenido":soup.get_text()}
         infojuego.append(dic) 
     return render_template("infojuego.html",infojuego=infojuego)
-
-app.run('0.0.0.0',5000, debug=True)
+port=os.environ["PORT"]
+app.run('0.0.0.0',int(port), debug=True)
