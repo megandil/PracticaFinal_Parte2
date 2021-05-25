@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/lista" method="post" >
+	<label>Introduce tu nombre de usuario en STEAM:</label>
+	<input type="text" name="cadena" placeholder="Puedes probar con: megadani1020 o srdemonio109">
+	<br>
+	<input type="submit" value="Buscar">
+</form>
+
+{% endblock %}

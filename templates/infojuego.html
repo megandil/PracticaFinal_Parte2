@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 align="center"> NOTICIAS </h1>
+<table>
+    <tbody>
+        <tr>
+            <th align="left">Titular</th>
+            <th align="left">Contenido</th>
+        </tr>
+    {% for i in infojuego -%}
+    <tr>
+        <td>{{ i.get("titulo") }}</td>
+        <td>{{ i.get("contenido") }}</td>
+    </tr>
+    {% endfor-%}
+    </tbody>
+</table>
+{% endblock %}

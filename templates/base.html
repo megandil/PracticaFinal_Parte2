@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>STEMEATE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link href="{{ url_for('static',filename='styles/main.css') }}" rel="stylesheet" type="text/css">
+		<noscript><link href="{{ url_for('static',filename='styles/noscript.css') }}"></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Stemeate</h1>
+						<p>Todo sobre Steam, tu plataforma de juegos favorita<br />
+						 Stemeate como todo el mundo</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="/" class="active">Inicio</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+                                {% block content %} {% endblock %}
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Stemeate</h2>
+							<p>Desde saber los juegos que tiene en tu biblioteca,a obtener datos sobre tu cuenta como el SteamID.</p>
+							<ul class="actions">
+								<li><a href="/" class="button">Saber Más</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Contacto</h2>
+							<dl class="alt">
+								<dt>Dirección</dt>
+								<dd>IES GONZALO NAZARENO &bull; SEVILLA, DOS HERMANAS 41704 &bull; ESP</dd>
+								<dt>Teléfono</dt>
+								<dd>666666666</dd>
+								<dt>Email</dt>
+								<dd><a href="#">danimesamejias@gmail.com</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="https://github.com/megandil" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
